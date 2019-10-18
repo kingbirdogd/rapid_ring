@@ -1,0 +1,206 @@
+Start test block size: 1, thread 1, 1
+write thread id:0, time consume:8453978744 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:42, nanos pre operations:42, ips(items per second):23657499, ops(operation per second):23657499
+read thread id:0, item count:200000000, operation count:200000000, time consume:8490154603 nanoseconds, nanos pre item:42, nanos pre operations:42, ips(items per second):23556697, ops(operation per second):23556697
+write thread summary, thread count:1, time consume:8453978744 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:42, nanos pre operations:42, ips(items per second):23657499, ops(operation per second):23657499
+read thread summary, thread count:1, time consume:8490154603 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:42, nanos pre operations:42, ips(items per second):23556697, ops(operation per second):23556697
+Start test block size: 10, thread 1, 1
+write thread id:0, time consume:2838613071 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:14, nanos pre operations:141, ips(items per second):70456943, ops(operation per second):7045694
+read thread id:0, item count:200000000, operation count:20000000, time consume:2844042401 nanoseconds, nanos pre item:14, nanos pre operations:142, ips(items per second):70322439, ops(operation per second):7032243
+write thread summary, thread count:1, time consume:2838613071 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:14, nanos pre operations:141, ips(items per second):70456943, ops(operation per second):7045694
+read thread summary, thread count:1, time consume:2844042401 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:14, nanos pre operations:142, ips(items per second):70322439, ops(operation per second):7032243
+Start test block size: 100, thread 1, 1
+write thread id:0, time consume:948407525 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:4, nanos pre operations:474, ips(items per second):210879811, ops(operation per second):2108798
+read thread id:0, item count:200000000, operation count:2000000, time consume:948412980 nanoseconds, nanos pre item:4, nanos pre operations:474, ips(items per second):210878598, ops(operation per second):2108785
+write thread summary, thread count:1, time consume:948407525 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:4, nanos pre operations:474, ips(items per second):210879811, ops(operation per second):2108798
+read thread summary, thread count:1, time consume:948412980 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:4, nanos pre operations:474, ips(items per second):210878598, ops(operation per second):2108785
+Start test block size: 1000, thread 1, 1
+write thread id:0, time consume:811515969 nanoseconds, item count:200000000, operation count:200000, nanos pre item:4, nanos pre operations:4057, ips(items per second):246452328, ops(operation per second):246452
+read thread id:0, item count:200000000, operation count:200000, time consume:814959354 nanoseconds, nanos pre item:4, nanos pre operations:4074, ips(items per second):245411012, ops(operation per second):245411
+write thread summary, thread count:1, time consume:811515969 nanoseconds, item count:200000000, operation count:200000, nanos pre item:4, nanos pre operations:4057, ips(items per second):246452328, ops(operation per second):246452
+read thread summary, thread count:1, time consume:814959354 nanoseconds, item count:200000000, operation count:200000, nanos pre item:4, nanos pre operations:4074, ips(items per second):245411012, ops(operation per second):245411
+Start test block size: 1, thread 4, 4
+write thread id:0, time consume:11365703922 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:227, nanos pre operations:227, ips(items per second):4399199, ops(operation per second):4399199
+write thread id:1, time consume:11279880185 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:225, nanos pre operations:225, ips(items per second):4432671, ops(operation per second):4432671
+write thread id:2, time consume:11288395037 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:225, nanos pre operations:225, ips(items per second):4429327, ops(operation per second):4429327
+write thread id:3, time consume:11375375775 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:227, nanos pre operations:227, ips(items per second):4395459, ops(operation per second):4395459
+read thread id:0, item count:50000000, operation count:50000000, time consume:11297867918 nanoseconds, nanos pre item:225, nanos pre operations:225, ips(items per second):4425613, ops(operation per second):4425613
+read thread id:1, item count:50000000, operation count:50000000, time consume:11414905347 nanoseconds, nanos pre item:228, nanos pre operations:228, ips(items per second):4380237, ops(operation per second):4380237
+read thread id:2, item count:50000000, operation count:50000000, time consume:11361453501 nanoseconds, nanos pre item:227, nanos pre operations:227, ips(items per second):4400845, ops(operation per second):4400845
+read thread id:3, item count:50000000, operation count:50000000, time consume:11246580139 nanoseconds, nanos pre item:224, nanos pre operations:224, ips(items per second):4445795, ops(operation per second):4445795
+write thread summary, thread count:4, time consume:11375375775 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:56, nanos pre operations:56, ips(items per second):17581836, ops(operation per second):17581836
+read thread summary, thread count:4, time consume:11414905347 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:57, nanos pre operations:57, ips(items per second):17520951, ops(operation per second):17520951
+Start test block size: 10, thread 4, 4
+write thread id:0, time consume:2744555453 nanoseconds, item count:50000000, operation count:5000000, nanos pre item:54, nanos pre operations:548, ips(items per second):18217886, ops(operation per second):1821788
+write thread id:1, time consume:2743181116 nanoseconds, item count:50000000, operation count:5000000, nanos pre item:54, nanos pre operations:548, ips(items per second):18227013, ops(operation per second):1822701
+write thread id:2, time consume:2760020477 nanoseconds, item count:50000000, operation count:5000000, nanos pre item:55, nanos pre operations:552, ips(items per second):18115807, ops(operation per second):1811580
+write thread id:3, time consume:2755756306 nanoseconds, item count:50000000, operation count:5000000, nanos pre item:55, nanos pre operations:551, ips(items per second):18143839, ops(operation per second):1814383
+read thread id:0, item count:50000000, operation count:5000000, time consume:2758057538 nanoseconds, nanos pre item:55, nanos pre operations:551, ips(items per second):18128700, ops(operation per second):1812870
+read thread id:1, item count:50000000, operation count:5000000, time consume:2769562969 nanoseconds, nanos pre item:55, nanos pre operations:553, ips(items per second):18053389, ops(operation per second):1805338
+read thread id:2, item count:50000000, operation count:5000000, time consume:2650023249 nanoseconds, nanos pre item:53, nanos pre operations:530, ips(items per second):18867758, ops(operation per second):1886775
+read thread id:3, item count:50000000, operation count:5000000, time consume:2640399945 nanoseconds, nanos pre item:52, nanos pre operations:528, ips(items per second):18936525, ops(operation per second):1893652
+write thread summary, thread count:4, time consume:2760020477 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:13, nanos pre operations:138, ips(items per second):72463230, ops(operation per second):7246323
+read thread summary, thread count:4, time consume:2769562969 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:13, nanos pre operations:138, ips(items per second):72213559, ops(operation per second):7221355
+Start test block size: 100, thread 4, 4
+write thread id:0, time consume:763923462 nanoseconds, item count:50000000, operation count:500000, nanos pre item:15, nanos pre operations:1527, ips(items per second):65451583, ops(operation per second):654515
+write thread id:1, time consume:769060415 nanoseconds, item count:50000000, operation count:500000, nanos pre item:15, nanos pre operations:1538, ips(items per second):65014398, ops(operation per second):650143
+write thread id:2, time consume:761820301 nanoseconds, item count:50000000, operation count:500000, nanos pre item:15, nanos pre operations:1523, ips(items per second):65632275, ops(operation per second):656322
+write thread id:3, time consume:758575402 nanoseconds, item count:50000000, operation count:500000, nanos pre item:15, nanos pre operations:1517, ips(items per second):65913025, ops(operation per second):659130
+read thread id:0, item count:50000000, operation count:500000, time consume:768696885 nanoseconds, nanos pre item:15, nanos pre operations:1537, ips(items per second):65045144, ops(operation per second):650451
+read thread id:1, item count:50000000, operation count:500000, time consume:767182316 nanoseconds, nanos pre item:15, nanos pre operations:1534, ips(items per second):65173556, ops(operation per second):651735
+read thread id:2, item count:50000000, operation count:500000, time consume:768974224 nanoseconds, nanos pre item:15, nanos pre operations:1537, ips(items per second):65021685, ops(operation per second):650216
+read thread id:3, item count:50000000, operation count:500000, time consume:761445269 nanoseconds, nanos pre item:15, nanos pre operations:1522, ips(items per second):65664601, ops(operation per second):656646
+write thread summary, thread count:4, time consume:769060415 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:3, nanos pre operations:384, ips(items per second):260057592, ops(operation per second):2600575
+read thread summary, thread count:4, time consume:768974224 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:3, nanos pre operations:384, ips(items per second):260086741, ops(operation per second):2600867
+Start test block size: 1000, thread 4, 4
+write thread id:0, time consume:571493288 nanoseconds, item count:50000000, operation count:50000, nanos pre item:11, nanos pre operations:11429, ips(items per second):87490091, ops(operation per second):87490
+write thread id:1, time consume:567661375 nanoseconds, item count:50000000, operation count:50000, nanos pre item:11, nanos pre operations:11353, ips(items per second):88080680, ops(operation per second):88080
+write thread id:2, time consume:572692472 nanoseconds, item count:50000000, operation count:50000, nanos pre item:11, nanos pre operations:11453, ips(items per second):87306892, ops(operation per second):87306
+write thread id:3, time consume:573398735 nanoseconds, item count:50000000, operation count:50000, nanos pre item:11, nanos pre operations:11467, ips(items per second):87199355, ops(operation per second):87199
+read thread id:0, item count:50000000, operation count:50000, time consume:576990593 nanoseconds, nanos pre item:11, nanos pre operations:11539, ips(items per second):86656525, ops(operation per second):86656
+read thread id:1, item count:50000000, operation count:50000, time consume:568118070 nanoseconds, nanos pre item:11, nanos pre operations:11362, ips(items per second):88009874, ops(operation per second):88009
+read thread id:2, item count:50000000, operation count:50000, time consume:570945310 nanoseconds, nanos pre item:11, nanos pre operations:11418, ips(items per second):87574062, ops(operation per second):87574
+read thread id:3, item count:50000000, operation count:50000, time consume:565732314 nanoseconds, nanos pre item:11, nanos pre operations:11314, ips(items per second):88381021, ops(operation per second):88381
+write thread summary, thread count:4, time consume:573398735 nanoseconds, item count:200000000, operation count:200000, nanos pre item:2, nanos pre operations:2866, ips(items per second):348797421, ops(operation per second):348797
+read thread summary, thread count:4, time consume:576990593 nanoseconds, item count:200000000, operation count:200000, nanos pre item:2, nanos pre operations:2884, ips(items per second):346626101, ops(operation per second):346626
+Start test block with check size: 1, thread 1, 1
+write thread id:0, time consume:394103287 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:197, nanos pre operations:197, ips(items per second):5074811, ops(operation per second):5074811
+read thread id:0, item count:2000000, operation count:2000000, time consume:394084026 nanoseconds, nanos pre item:197, nanos pre operations:197, ips(items per second):5075059, ops(operation per second):5075059
+write thread summary, thread count:1, time consume:394103287 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:197, nanos pre operations:197, ips(items per second):5074811, ops(operation per second):5074811
+read thread summary, thread count:1, time consume:394084026 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:197, nanos pre operations:197, ips(items per second):5075059, ops(operation per second):5075059
+Start test block with check size: 10, thread 1, 1
+write thread id:0, time consume:446249833 nanoseconds, item count:2000000, operation count:200000, nanos pre item:223, nanos pre operations:2231, ips(items per second):4481794, ops(operation per second):448179
+read thread id:0, item count:2000000, operation count:200000, time consume:446231965 nanoseconds, nanos pre item:223, nanos pre operations:2231, ips(items per second):4481973, ops(operation per second):448197
+write thread summary, thread count:1, time consume:446249833 nanoseconds, item count:2000000, operation count:200000, nanos pre item:223, nanos pre operations:2231, ips(items per second):4481794, ops(operation per second):448179
+read thread summary, thread count:1, time consume:446231965 nanoseconds, item count:2000000, operation count:200000, nanos pre item:223, nanos pre operations:2231, ips(items per second):4481973, ops(operation per second):448197
+Start test block with check size: 100, thread 1, 1
+write thread id:0, time consume:403957732 nanoseconds, item count:2000000, operation count:20000, nanos pre item:201, nanos pre operations:20197, ips(items per second):4951013, ops(operation per second):49510
+read thread id:0, item count:2000000, operation count:20000, time consume:403994363 nanoseconds, nanos pre item:201, nanos pre operations:20199, ips(items per second):4950564, ops(operation per second):49505
+write thread summary, thread count:1, time consume:403957732 nanoseconds, item count:2000000, operation count:20000, nanos pre item:201, nanos pre operations:20197, ips(items per second):4951013, ops(operation per second):49510
+read thread summary, thread count:1, time consume:403994363 nanoseconds, item count:2000000, operation count:20000, nanos pre item:201, nanos pre operations:20199, ips(items per second):4950564, ops(operation per second):49505
+Start test block with check size: 1000, thread 1, 1
+write thread id:0, time consume:38454020 nanoseconds, item count:200000, operation count:200, nanos pre item:192, nanos pre operations:192270, ips(items per second):5201016, ops(operation per second):5201
+read thread id:0, item count:200000, operation count:200, time consume:38514087 nanoseconds, nanos pre item:192, nanos pre operations:192570, ips(items per second):5192905, ops(operation per second):5192
+write thread summary, thread count:1, time consume:38454020 nanoseconds, item count:200000, operation count:200, nanos pre item:192, nanos pre operations:192270, ips(items per second):5201016, ops(operation per second):5201
+read thread summary, thread count:1, time consume:38514087 nanoseconds, item count:200000, operation count:200, nanos pre item:192, nanos pre operations:192570, ips(items per second):5192905, ops(operation per second):5192
+Start test block with check size: 1, thread 4, 4
+write thread id:0, time consume:457240261 nanoseconds, item count:500000, operation count:500000, nanos pre item:914, nanos pre operations:914, ips(items per second):1093517, ops(operation per second):1093517
+write thread id:1, time consume:446296600 nanoseconds, item count:500000, operation count:500000, nanos pre item:892, nanos pre operations:892, ips(items per second):1120331, ops(operation per second):1120331
+write thread id:2, time consume:486225464 nanoseconds, item count:500000, operation count:500000, nanos pre item:972, nanos pre operations:972, ips(items per second):1028329, ops(operation per second):1028329
+write thread id:3, time consume:457379121 nanoseconds, item count:500000, operation count:500000, nanos pre item:914, nanos pre operations:914, ips(items per second):1093185, ops(operation per second):1093185
+read thread id:0, item count:500000, operation count:500000, time consume:485783423 nanoseconds, nanos pre item:971, nanos pre operations:971, ips(items per second):1029265, ops(operation per second):1029265
+read thread id:1, item count:500000, operation count:500000, time consume:461957227 nanoseconds, nanos pre item:923, nanos pre operations:923, ips(items per second):1082351, ops(operation per second):1082351
+read thread id:2, item count:500000, operation count:500000, time consume:438984328 nanoseconds, nanos pre item:877, nanos pre operations:877, ips(items per second):1138992, ops(operation per second):1138992
+read thread id:3, item count:500000, operation count:500000, time consume:484260318 nanoseconds, nanos pre item:968, nanos pre operations:968, ips(items per second):1032502, ops(operation per second):1032502
+write thread summary, thread count:4, time consume:486225464 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:243, nanos pre operations:243, ips(items per second):4113318, ops(operation per second):4113318
+read thread summary, thread count:4, time consume:485783423 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:242, nanos pre operations:242, ips(items per second):4117061, ops(operation per second):4117061
+Start test block with check size: 10, thread 4, 4
+write thread id:0, time consume:434849226 nanoseconds, item count:500000, operation count:50000, nanos pre item:869, nanos pre operations:8696, ips(items per second):1149823, ops(operation per second):114982
+write thread id:1, time consume:437196961 nanoseconds, item count:500000, operation count:50000, nanos pre item:874, nanos pre operations:8743, ips(items per second):1143649, ops(operation per second):114364
+write thread id:2, time consume:432783961 nanoseconds, item count:500000, operation count:50000, nanos pre item:865, nanos pre operations:8655, ips(items per second):1155310, ops(operation per second):115531
+write thread id:3, time consume:420772216 nanoseconds, item count:500000, operation count:50000, nanos pre item:841, nanos pre operations:8415, ips(items per second):1188291, ops(operation per second):118829
+read thread id:0, item count:500000, operation count:50000, time consume:461673493 nanoseconds, nanos pre item:923, nanos pre operations:9233, ips(items per second):1083016, ops(operation per second):108301
+read thread id:1, item count:500000, operation count:50000, time consume:459052219 nanoseconds, nanos pre item:918, nanos pre operations:9181, ips(items per second):1089200, ops(operation per second):108920
+read thread id:2, item count:500000, operation count:50000, time consume:460205577 nanoseconds, nanos pre item:920, nanos pre operations:9204, ips(items per second):1086470, ops(operation per second):108647
+read thread id:3, item count:500000, operation count:50000, time consume:461781727 nanoseconds, nanos pre item:923, nanos pre operations:9235, ips(items per second):1082762, ops(operation per second):108276
+write thread summary, thread count:4, time consume:437196961 nanoseconds, item count:2000000, operation count:200000, nanos pre item:218, nanos pre operations:2185, ips(items per second):4574597, ops(operation per second):457459
+read thread summary, thread count:4, time consume:461781727 nanoseconds, item count:2000000, operation count:200000, nanos pre item:230, nanos pre operations:2308, ips(items per second):4331050, ops(operation per second):433105
+Start test block with check size: 100, thread 4, 4
+write thread id:0, time consume:257561461 nanoseconds, item count:500000, operation count:5000, nanos pre item:515, nanos pre operations:51512, ips(items per second):1941284, ops(operation per second):19412
+write thread id:1, time consume:251193063 nanoseconds, item count:500000, operation count:5000, nanos pre item:502, nanos pre operations:50238, ips(items per second):1990500, ops(operation per second):19905
+write thread id:2, time consume:255772027 nanoseconds, item count:500000, operation count:5000, nanos pre item:511, nanos pre operations:51154, ips(items per second):1954865, ops(operation per second):19548
+write thread id:3, time consume:256645772 nanoseconds, item count:500000, operation count:5000, nanos pre item:513, nanos pre operations:51329, ips(items per second):1948210, ops(operation per second):19482
+read thread id:0, item count:500000, operation count:5000, time consume:250836562 nanoseconds, nanos pre item:501, nanos pre operations:50167, ips(items per second):1993329, ops(operation per second):19933
+read thread id:1, item count:500000, operation count:5000, time consume:251960036 nanoseconds, nanos pre item:503, nanos pre operations:50392, ips(items per second):1984441, ops(operation per second):19844
+read thread id:2, item count:500000, operation count:5000, time consume:259590214 nanoseconds, nanos pre item:519, nanos pre operations:51918, ips(items per second):1926112, ops(operation per second):19261
+read thread id:3, item count:500000, operation count:5000, time consume:254409556 nanoseconds, nanos pre item:508, nanos pre operations:50881, ips(items per second):1965334, ops(operation per second):19653
+write thread summary, thread count:4, time consume:257561461 nanoseconds, item count:2000000, operation count:20000, nanos pre item:128, nanos pre operations:12878, ips(items per second):7765136, ops(operation per second):77651
+read thread summary, thread count:4, time consume:259590214 nanoseconds, item count:2000000, operation count:20000, nanos pre item:129, nanos pre operations:12979, ips(items per second):7704450, ops(operation per second):77044
+Start test block with check size: 1000, thread 4, 4
+write thread id:0, time consume:189680075 nanoseconds, item count:500000, operation count:500, nanos pre item:379, nanos pre operations:379360, ips(items per second):2636017, ops(operation per second):2636
+write thread id:1, time consume:196363949 nanoseconds, item count:500000, operation count:500, nanos pre item:392, nanos pre operations:392727, ips(items per second):2546292, ops(operation per second):2546
+write thread id:2, time consume:192371214 nanoseconds, item count:500000, operation count:500, nanos pre item:384, nanos pre operations:384742, ips(items per second):2599141, ops(operation per second):2599
+write thread id:3, time consume:189150889 nanoseconds, item count:500000, operation count:500, nanos pre item:378, nanos pre operations:378301, ips(items per second):2643392, ops(operation per second):2643
+read thread id:0, item count:500000, operation count:500, time consume:202288455 nanoseconds, nanos pre item:404, nanos pre operations:404576, ips(items per second):2471717, ops(operation per second):2471
+read thread id:1, item count:500000, operation count:500, time consume:177309998 nanoseconds, nanos pre item:354, nanos pre operations:354619, ips(items per second):2819919, ops(operation per second):2819
+read thread id:2, item count:500000, operation count:500, time consume:176270627 nanoseconds, nanos pre item:352, nanos pre operations:352541, ips(items per second):2836547, ops(operation per second):2836
+read thread id:3, item count:500000, operation count:500, time consume:197364405 nanoseconds, nanos pre item:394, nanos pre operations:394728, ips(items per second):2533384, ops(operation per second):2533
+write thread summary, thread count:4, time consume:196363949 nanoseconds, item count:2000000, operation count:2000, nanos pre item:98, nanos pre operations:98181, ips(items per second):10185168, ops(operation per second):10185
+read thread summary, thread count:4, time consume:202288455 nanoseconds, item count:2000000, operation count:2000, nanos pre item:101, nanos pre operations:101144, ips(items per second):9886871, ops(operation per second):9886
+Start test disruptor block size: 1, write thread 4
+write thread id:0, time consume:78509573890 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:1570, nanos pre operations:1570, ips(items per second):636865, ops(operation per second):636865
+write thread id:1, time consume:78550984415 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:1571, nanos pre operations:1571, ips(items per second):636529, ops(operation per second):636529
+write thread id:2, time consume:78811381084 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:1576, nanos pre operations:1576, ips(items per second):634426, ops(operation per second):634426
+write thread id:3, time consume:78755069225 nanoseconds, item count:50000000, operation count:50000000, nanos pre item:1575, nanos pre operations:1575, ips(items per second):634879, ops(operation per second):634879
+read thread id:0, item count:200000000, operation count:200000000, time consume:78812031748 nanoseconds, nanos pre item:394, nanos pre operations:394, ips(items per second):2537683, ops(operation per second):2537683
+read thread id:1, item count:200000000, operation count:200000000, time consume:78812617983 nanoseconds, nanos pre item:394, nanos pre operations:394, ips(items per second):2537664, ops(operation per second):2537664
+read thread id:2, item count:200000000, operation count:200000000, time consume:78832035473 nanoseconds, nanos pre item:394, nanos pre operations:394, ips(items per second):2537039, ops(operation per second):2537039
+read thread id:3, item count:200000000, operation count:200000000, time consume:78862114877 nanoseconds, nanos pre item:394, nanos pre operations:394, ips(items per second):2536071, ops(operation per second):2536071
+write thread summary, thread count:4, time consume:78811381084 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:394, nanos pre operations:394, ips(items per second):2537704, ops(operation per second):2537704
+read thread summary, thread count: 4, time consume:78862114877 nanoseconds, item count:800000000, operation count:800000000, nanos pre item:98, nanos pre operations:98, ips(items per second):10144287, ops(operation per second):10144287
+Start test disruptor block with check size: 1, write thread 4
+write thread id:0, time consume:8813671401 nanoseconds, item count:5000000, operation count:5000000, nanos pre item:1762, nanos pre operations:1762, ips(items per second):567300, ops(operation per second):567300
+write thread id:1, time consume:8804325375 nanoseconds, item count:5000000, operation count:5000000, nanos pre item:1760, nanos pre operations:1760, ips(items per second):567902, ops(operation per second):567902
+write thread id:2, time consume:8611055394 nanoseconds, item count:5000000, operation count:5000000, nanos pre item:1722, nanos pre operations:1722, ips(items per second):580648, ops(operation per second):580648
+write thread id:3, time consume:8810250173 nanoseconds, item count:5000000, operation count:5000000, nanos pre item:1762, nanos pre operations:1762, ips(items per second):567520, ops(operation per second):567520
+read thread id:0, item count:20000000, operation count:20000000, time consume:8813654192 nanoseconds, nanos pre item:440, nanos pre operations:440, ips(items per second):2269206, ops(operation per second):2269206
+read thread id:1, item count:20000000, operation count:20000000, time consume:8813624854 nanoseconds, nanos pre item:440, nanos pre operations:440, ips(items per second):2269213, ops(operation per second):2269213
+read thread id:2, item count:20000000, operation count:20000000, time consume:9059016097 nanoseconds, nanos pre item:452, nanos pre operations:452, ips(items per second):2207745, ops(operation per second):2207745
+read thread id:3, item count:20000000, operation count:20000000, time consume:9058995915 nanoseconds, nanos pre item:452, nanos pre operations:452, ips(items per second):2207750, ops(operation per second):2207750
+write thread summary, thread count:4, time consume:8813671401 nanoseconds, item count:20000000, operation count:20000000, nanos pre item:440, nanos pre operations:440, ips(items per second):2269201, ops(operation per second):2269201
+read thread summary, thread count: 4, time consume:9059016097 nanoseconds, item count:80000000, operation count:80000000, nanos pre item:113, nanos pre operations:113, ips(items per second):8830981, ops(operation per second):8830981
+SPSC Start test block size: 1, thread 1, 1
+write thread id:0, time consume:9697734188 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:48, nanos pre operations:48, ips(items per second):20623374, ops(operation per second):20623374
+read thread id:0, item count:200000000, operation count:200000000, time consume:9726648019 nanoseconds, nanos pre item:48, nanos pre operations:48, ips(items per second):20562068, ops(operation per second):20562068
+write thread summary, thread count:1, time consume:9697734188 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:48, nanos pre operations:48, ips(items per second):20623374, ops(operation per second):20623374
+read thread summary, thread count:1, time consume:9726648019 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:48, nanos pre operations:48, ips(items per second):20562068, ops(operation per second):20562068
+SPSC Start test block size: 10, thread 1, 1
+write thread id:0, time consume:1442847965 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:7, nanos pre operations:72, ips(items per second):138614743, ops(operation per second):13861474
+read thread id:0, item count:200000000, operation count:20000000, time consume:1447691441 nanoseconds, nanos pre item:7, nanos pre operations:72, ips(items per second):138150986, ops(operation per second):13815098
+write thread summary, thread count:1, time consume:1442847965 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:7, nanos pre operations:72, ips(items per second):138614743, ops(operation per second):13861474
+read thread summary, thread count:1, time consume:1447691441 nanoseconds, item count:200000000, operation count:20000000, nanos pre item:7, nanos pre operations:72, ips(items per second):138150986, ops(operation per second):13815098
+SPSC Start test block size: 100, thread 1, 1
+write thread id:0, time consume:715153351 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:3, nanos pre operations:357, ips(items per second):279660299, ops(operation per second):2796602
+read thread id:0, item count:200000000, operation count:2000000, time consume:715126539 nanoseconds, nanos pre item:3, nanos pre operations:357, ips(items per second):279670784, ops(operation per second):2796707
+write thread summary, thread count:1, time consume:715153351 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:3, nanos pre operations:357, ips(items per second):279660299, ops(operation per second):2796602
+read thread summary, thread count:1, time consume:715126539 nanoseconds, item count:200000000, operation count:2000000, nanos pre item:3, nanos pre operations:357, ips(items per second):279670784, ops(operation per second):2796707
+SPSC Start test block size: 1000, thread 1, 1
+write thread id:0, time consume:705754318 nanoseconds, item count:200000000, operation count:200000, nanos pre item:3, nanos pre operations:3528, ips(items per second):283384734, ops(operation per second):283384
+read thread id:0, item count:200000000, operation count:200000, time consume:705741444 nanoseconds, nanos pre item:3, nanos pre operations:3528, ips(items per second):283389903, ops(operation per second):283389
+write thread summary, thread count:1, time consume:705754318 nanoseconds, item count:200000000, operation count:200000, nanos pre item:3, nanos pre operations:3528, ips(items per second):283384734, ops(operation per second):283384
+read thread summary, thread count:1, time consume:705741444 nanoseconds, item count:200000000, operation count:200000, nanos pre item:3, nanos pre operations:3528, ips(items per second):283389903, ops(operation per second):283389
+SPSC Start test block with check size: 1, thread 1, 1
+write thread id:0, time consume:191891628 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:95, nanos pre operations:95, ips(items per second):10422549, ops(operation per second):10422549
+read thread id:0, item count:2000000, operation count:2000000, time consume:191872176 nanoseconds, nanos pre item:95, nanos pre operations:95, ips(items per second):10423606, ops(operation per second):10423606
+write thread summary, thread count:1, time consume:191891628 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:95, nanos pre operations:95, ips(items per second):10422549, ops(operation per second):10422549
+read thread summary, thread count:1, time consume:191872176 nanoseconds, item count:2000000, operation count:2000000, nanos pre item:95, nanos pre operations:95, ips(items per second):10423606, ops(operation per second):10423606
+SPSC Start test block with check size: 10, thread 1, 1
+write thread id:0, time consume:211821006 nanoseconds, item count:2000000, operation count:200000, nanos pre item:105, nanos pre operations:1059, ips(items per second):9441934, ops(operation per second):944193
+read thread id:0, item count:2000000, operation count:200000, time consume:211807156 nanoseconds, nanos pre item:105, nanos pre operations:1059, ips(items per second):9442551, ops(operation per second):944255
+write thread summary, thread count:1, time consume:211821006 nanoseconds, item count:2000000, operation count:200000, nanos pre item:105, nanos pre operations:1059, ips(items per second):9441934, ops(operation per second):944193
+read thread summary, thread count:1, time consume:211807156 nanoseconds, item count:2000000, operation count:200000, nanos pre item:105, nanos pre operations:1059, ips(items per second):9442551, ops(operation per second):944255
+SPSC Start test block with check size: 100, thread 1, 1
+write thread id:0, time consume:219975302 nanoseconds, item count:2000000, operation count:20000, nanos pre item:109, nanos pre operations:10998, ips(items per second):9091929, ops(operation per second):90919
+read thread id:0, item count:2000000, operation count:20000, time consume:219961074 nanoseconds, nanos pre item:109, nanos pre operations:10998, ips(items per second):9092517, ops(operation per second):90925
+write thread summary, thread count:1, time consume:219975302 nanoseconds, item count:2000000, operation count:20000, nanos pre item:109, nanos pre operations:10998, ips(items per second):9091929, ops(operation per second):90919
+read thread summary, thread count:1, time consume:219961074 nanoseconds, item count:2000000, operation count:20000, nanos pre item:109, nanos pre operations:10998, ips(items per second):9092517, ops(operation per second):90925
+SPSC Start test block with check size: 1000, thread 1, 1
+write thread id:0, time consume:26116984 nanoseconds, item count:200000, operation count:200, nanos pre item:130, nanos pre operations:130584, ips(items per second):7657852, ops(operation per second):7657
+read thread id:0, item count:200000, operation count:200, time consume:26256452 nanoseconds, nanos pre item:131, nanos pre operations:131282, ips(items per second):7617175, ops(operation per second):7617
+write thread summary, thread count:1, time consume:26116984 nanoseconds, item count:200000, operation count:200, nanos pre item:130, nanos pre operations:130584, ips(items per second):7657852, ops(operation per second):7657
+read thread summary, thread count:1, time consume:26256452 nanoseconds, item count:200000, operation count:200, nanos pre item:131, nanos pre operations:131282, ips(items per second):7617175, ops(operation per second):7617
+SPSC Start test disruptor block size: 1, write thread 4
+write thread id:0, time consume:56519295385 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:282, nanos pre operations:282, ips(items per second):3538614, ops(operation per second):3538614
+read thread id:0, item count:200000000, operation count:200000000, time consume:56519328585 nanoseconds, nanos pre item:282, nanos pre operations:282, ips(items per second):3538612, ops(operation per second):3538612
+read thread id:1, item count:200000000, operation count:200000000, time consume:56519289822 nanoseconds, nanos pre item:282, nanos pre operations:282, ips(items per second):3538614, ops(operation per second):3538614
+read thread id:2, item count:200000000, operation count:200000000, time consume:56712070259 nanoseconds, nanos pre item:283, nanos pre operations:283, ips(items per second):3526586, ops(operation per second):3526586
+read thread id:3, item count:200000000, operation count:200000000, time consume:56712055852 nanoseconds, nanos pre item:283, nanos pre operations:283, ips(items per second):3526587, ops(operation per second):3526587
+write thread summary, thread count:1, time consume:56519295385 nanoseconds, item count:200000000, operation count:200000000, nanos pre item:282, nanos pre operations:282, ips(items per second):3538614, ops(operation per second):3538614
+read thread summary, thread count: 4, time consume:56712070259 nanoseconds, item count:800000000, operation count:800000000, nanos pre item:70, nanos pre operations:70, ips(items per second):14106344, ops(operation per second):14106344
+SPSC Start test disruptor block with check size: 1, write thread 4
+write thread id:0, time consume:8357061147 nanoseconds, item count:20000000, operation count:20000000, nanos pre item:417, nanos pre operations:417, ips(items per second):2393185, ops(operation per second):2393185
+read thread id:0, item count:20000000, operation count:20000000, time consume:8357045930 nanoseconds, nanos pre item:417, nanos pre operations:417, ips(items per second):2393190, ops(operation per second):2393190
+read thread id:1, item count:20000000, operation count:20000000, time consume:8357035394 nanoseconds, nanos pre item:417, nanos pre operations:417, ips(items per second):2393193, ops(operation per second):2393193
+read thread id:2, item count:20000000, operation count:20000000, time consume:8600111828 nanoseconds, nanos pre item:430, nanos pre operations:430, ips(items per second):2325551, ops(operation per second):2325551
+read thread id:3, item count:20000000, operation count:20000000, time consume:8600103516 nanoseconds, nanos pre item:430, nanos pre operations:430, ips(items per second):2325553, ops(operation per second):2325553
+write thread summary, thread count:1, time consume:8357061147 nanoseconds, item count:20000000, operation count:20000000, nanos pre item:417, nanos pre operations:417, ips(items per second):2393185, ops(operation per second):2393185
+read thread summary, thread count: 4, time consume:8600111828 nanoseconds, item count:80000000, operation count:80000000, nanos pre item:107, nanos pre operations:107, ips(items per second):9302204, ops(operation per second):9302204
