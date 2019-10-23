@@ -1170,8 +1170,23 @@ private:
 	}
 };
 
+struct RemoteTest
+{
+	RemoteTest()
+	{
+		std::cout << "RemoteTest" << std::endl;
+	}
+	virtual ~RemoteTest()
+	{
+		std::cout << "~RemoteTest" << std::endl;
+	}
+};
+
 int main(void)
 {
+	{
+		rapid_ring::mpmc_ring_buffer_queue<RemoteTest, 10> test;
+	}
 	ring_buffer_queue_benchmark<rapid_ring::mpmc_ring_buffer_queue, 1000000, 200000000, 1, 1, 1> test1;
 	ring_buffer_queue_benchmark<rapid_ring::mpmc_ring_buffer_queue, 1000000, 20000000, 10, 1, 1> test2;
 	ring_buffer_queue_benchmark<rapid_ring::mpmc_ring_buffer_queue, 1000000, 2000000, 100, 1, 1> test3;

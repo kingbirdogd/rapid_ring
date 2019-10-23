@@ -57,6 +57,8 @@ namespace rapid_ring
 
 		~ring_buffer_base()
 		{
+			for (uint64_t i = 0; i < buffer_size; ++i)
+				((node *&) buffer_ + i)->~node();
 			node_alloc_.deallocate(buffer_, buffer_size);
 		}
 
