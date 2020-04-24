@@ -39,6 +39,7 @@ namespace rapid_ring
 			CACHELINE_SIZE,
 			allocator_tmp
 		>;
+		using reader = typename base::read_reserve;
 	public:
 		class link_not_found_exception
 				:
@@ -370,6 +371,43 @@ namespace rapid_ring
 				);
 				read_barrier_.set(pos, end);
 				return true;
+			}
+
+			reader try_block_dequeue(uint64_t size)
+			{
+				reader r;
+				static_assert(std::is_trivially_copyable<typename base::node>::value, "non copytable");
+				auto base = read_barrier_.try_reserve();
+				auto end = base + size;
+				if (0 == upper_barriers_.try_wait(end))
+				{
+					return r;
+				}
+				if (!read_barrier_.set_reserve(base, end))
+				{
+					return r;
+				}
+				auto pos = base::moder::mode(base);
+				auto rest = base::buffer_size - pos;
+				if (rest >= size)
+				{
+					r.buff_ = ((ring_buffer_disruptor *&) (ring_))->base::buffer_ + pos;
+					r.size_first_ = size;
+					r.size_ = size;
+				}
+				else
+				{
+
+					r.buff_ = ((ring_buffer_disruptor *&) (ring_))->base::buffer_ + pos;
+					r.size_first_ = rest;
+					r.buff2_ = ((ring_buffer_disruptor *&) (ring_))->base::buffer_;
+					r.size_ = size;
+				}
+				r.cb_ = std::move([this, pos, end]()
+				{
+					read_barrier_.set(pos, end);
+				});
+				return r;
 			}
 		};
 

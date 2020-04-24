@@ -3,6 +3,7 @@
 #include <cstring>
 #include <type_traits>
 #include <algorithm>
+#include <functional>
 #include <atomic>
 #include <vector>
 #include <rapid_ring/meta/smart_copy.hpp>
@@ -41,6 +42,74 @@ namespace rapid_ring
 		node_allocator_packer node_alloc_;
 		barrier_type write_barrier_;
 		TReadBarrier read_barrier_;
+	public:
+		class read_reserve
+		{
+		private:
+			using cb = std::function<void()>;
+		public:
+			node* buff_;
+			node* buff2_;
+			uint64_t size_first_;
+			uint64_t size_;
+			cb cb_;
+		public:
+			void release()
+			{
+				if (cb_)
+				{
+					cb_();
+					cb_ = std::move(cb());
+				}
+			}
+		public:
+			read_reserve():
+				buff_(0),
+				buff2_(0),
+				size_first_(0),
+				size_(0),
+				cb_()
+			{
+			}
+			~read_reserve()
+			{
+				release();
+			}
+			read_reserve(const read_reserve&) = delete;
+			read_reserve(read_reserve&& r):
+				buff_(r.buff_),
+				buff2_(r.buff2_),
+				size_first_(r.size_first_),
+				size_(r.size_),
+				cb_(std::move(r.cb_))
+			{
+			}
+			read_reserve& operator= (const read_reserve&) = delete;
+			read_reserve& operator= (read_reserve&& r)
+			{
+				release();
+				buff_ = r.buff_;
+				buff2_ = r.buff2_;
+				size_first_ = r.size_first_;
+				size_ = r.size_;
+				cb_ = std::move(r.cb_);
+			}
+			operator bool() const
+			{
+				return (0 != size_);
+			}
+			T& operator[] (uint64_t idx)
+			{
+				if (idx < size_first_)
+					return buff_[idx];
+				else
+					return buff_[idx - size_first_];
+			}
+			uint64_t size() const
+			{
+				return size_;
+			}
+		};
 	public:
 		template<typename... TArgs>
 		ring_buffer_base(TArgs... args)

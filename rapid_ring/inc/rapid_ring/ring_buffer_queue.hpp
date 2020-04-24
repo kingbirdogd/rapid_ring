@@ -36,6 +36,7 @@ namespace rapid_ring
 			CACHELINE_SIZE,
 			allocator_tmp
 		>;
+		using reader = typename base::read_reserve;
 	public:
 		ring_buffer_queue()
 				:
@@ -122,6 +123,42 @@ namespace rapid_ring
 			rapid_ring::meta::smart_copy<T>::copy(value, base::buffer_[pos]);
 			base::read_barrier_.set(pos, end);
 			return true;
+		}
+
+		reader try_block_dequeue(uint64_t size)
+		{
+			reader r;
+			static_assert(std::is_trivially_copyable<typename base::node>::value, "non copytable");
+			auto base = base::read_barrier_.try_reserve();
+			auto end = base + size;
+			if (0 == base::write_barrier_.try_wait(end))
+			{
+				return r;
+			}
+			if (!base::read_barrier_.set_reserve(base, end))
+			{
+				return r;
+			}
+			auto pos = base::moder::mode(base);
+			auto rest = base::buffer_size - pos;
+			if (rest >= size)
+			{
+				r.buff_ = base::buffer_ + pos;
+				r.size_first_ = size;
+				r.size_ = size;
+			}
+			else
+			{
+				r.buff_ = base::buffer_ + pos;
+				r.size_first_ = rest;
+				r.buff2_ = base::buffer_;
+				r.size_ = size;
+			}
+			r.cb_ = std::move([this, pos, end]()
+			{
+				base::read_barrier_.set(pos, end);
+			});
+			return r;
 		}
 	};
 
