@@ -259,6 +259,11 @@ namespace rapid_ring
 				return read_barrier_.wait(min);
 			}
 
+			virtual uint64_t try_wait(uint64_t min) override
+			{
+				return read_barrier_.try_wait(min);
+			}
+
 			void block_dequeue(typename base::node *ptr, uint64_t size)
 			{
 				static_assert(std::is_trivially_copyable<typename base::node>::value, "non copytable");
@@ -355,7 +360,7 @@ namespace rapid_ring
 			{
 				auto base = read_barrier_.try_reserve();
 				auto end = base + 1;
-				if (0 == upper_barriers_.trye_wait(end))
+				if (0 == upper_barriers_.try_wait(end))
 				{
 					return false;
 				}
@@ -430,6 +435,11 @@ namespace rapid_ring
 		virtual uint64_t wait(uint64_t min) override
 		{
 			return base::write_barrier_.wait(min);
+		}
+
+		virtual uint64_t try_wait(uint64_t min) override
+		{
+			return base::write_barrier_.try_wait(min);
 		}
 
 		virtual void add(rapid_ring::barrier::barrier_interface &b) override

@@ -18,6 +18,8 @@ namespace rapid_ring
 
 			virtual uint64_t wait(uint64_t) = 0;
 
+			virtual uint64_t try_wait(uint64_t) = 0;
+
 			virtual void clear() = 0;
 
 			virtual void add(barrier_interface &) = 0;
@@ -78,6 +80,22 @@ namespace rapid_ring
 				}
 				return rt;
 			}
+
+			uint64_t try_wait(uint64_t min)
+			{
+				auto rt = std::numeric_limits<uint64_t>::max();
+				for (uint64_t i = 0; i < vec_.size(); ++i)
+				{
+					auto v = ((barrier_interface_ptr &) (vec_[i]))->try_wait(min);
+					if (v < rt)
+					{
+						rt = v;
+					}
+				}
+				return rt;
+			}
+
+
 		};
 
 		template
