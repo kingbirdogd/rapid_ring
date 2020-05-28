@@ -160,6 +160,17 @@ namespace rapid_ring
 			});
 			return r;
 		}
+
+		template <typename ...TArgs>
+		void warm_up(TArgs&& ...args)
+		{
+			T obj(args...);
+			for (uint64_t i = 0; i < base::buffer_size; ++i)
+			{
+				base::enqueue(obj);
+				dequeue(obj);
+			}
+		}
 	};
 
 	template

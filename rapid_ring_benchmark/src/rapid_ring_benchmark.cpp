@@ -478,6 +478,7 @@ public:
 			, w_(nullptr)
 			, r_(nullptr)
 	{
+		q_.warm_up();
 		w_ = reinterpret_cast<writer *>(new uint8_t[sizeof(writer) * WRITE_THREAD_CNT]);
 		r_ = reinterpret_cast<reader *>(new uint8_t[sizeof(reader) * READ_THREAD_CNT]);
 		for (uint64_t i = 0; i < WRITE_THREAD_CNT; ++i)
