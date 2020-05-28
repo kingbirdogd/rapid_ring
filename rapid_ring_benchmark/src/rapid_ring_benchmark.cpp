@@ -1085,6 +1085,7 @@ public:
 		cfg.x_depends_y(c4_, c3_);
 		cfg.x_depends_y(c3_, q_);
 		cfg.commit();
+		cfg.warm_up();
 	}
 
 	inline ~ring_buffer_disruptor_benchmark()

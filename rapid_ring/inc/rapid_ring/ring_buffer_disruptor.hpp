@@ -103,6 +103,43 @@ namespace rapid_ring
 			configure() = delete;
 
 		private:
+			std::vector<ptr> toposort()
+			{
+				std::vector<ptr> rt;
+				std::unordered_set<ptr> records;
+				records.insert(&root_);
+				auto grap = grap_;
+				while (1 != grap.size())
+				{
+					for (auto it = grap.begin(); it != grap.end();)
+					{
+						for (auto it_link = it->second.link_set.begin(); it_link != it->second.link_set.end();)
+						{
+							auto dep_ptr = *it_link;
+							if (records.end () != records.find(dep_ptr))
+							{
+								it_link = it->second.link_set.erase(it_link);
+							}
+							else
+							{
+								++it_link;
+							}
+						}
+						if (it->second.link_set.empty() && it->first != &root_)
+						{
+							records.insert(it->first);
+							rt.push_back(it->first);
+							it = grap.erase(it);
+						}
+						else
+						{
+							++it;
+						}
+					}
+				}
+				return rt;
+			}
+		private:
 			void check_ring(ptr x, ptr y)
 			{
 				if (x == y)
@@ -214,6 +251,32 @@ namespace rapid_ring
 					grap_.clear();
 					max_step_.clear();
 					already_commit_ = false;
+				}
+			}
+
+			template <typename ...TArgs>
+			void warm_up(TArgs&& ...args)
+			{
+				if (!already_commit_)
+					return;
+				auto clients = toposort();
+				T obj(args...);
+				for (uint64_t i = 0; i < root_.base::buffer_size; ++i)
+				{
+					root_.enqueue(obj);
+					for (auto& cli : clients)
+					{
+						try
+						{
+							auto ptr = dynamic_cast<comsumer_st*>(cli);
+							ptr->dequeue(obj);
+						}
+						catch(...)
+						{
+							auto ptr = dynamic_cast<comsumer_mt*>(cli);
+							ptr->dequeue(obj);
+						}
+					}
 				}
 			}
 		};
