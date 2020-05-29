@@ -110,7 +110,7 @@ namespace rapid_ring
 				records.insert(&root_);
 				auto grap = grap_;
 				grap.erase(&root_);
-				while (grap.size() > 1)
+				while (!grap.empty())
 				{
 					for (auto it = grap.begin(); it != grap.end();)
 					{

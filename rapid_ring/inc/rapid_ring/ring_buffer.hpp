@@ -27,7 +27,7 @@ namespace rapid_ring
 		using barrier_type = write_barrier_tmp<SIZE, CACHELINE_SIZE, allocator_tmp>;
 	public:
 		using node = rapid_ring::meta::cacheline::cacheline_packer<T, CACHELINE_SIZE>;
-	protected:
+	public:
 		const static uint64_t buffer_size = rapid_ring::meta::math::size_to_pow_2<SIZE>::value;
 	protected:
 		using uint64_packer = rapid_ring::meta::cacheline::cacheline_packer<std::atomic_uint64_t, CACHELINE_SIZE>;
