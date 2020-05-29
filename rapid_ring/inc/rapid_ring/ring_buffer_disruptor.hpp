@@ -109,7 +109,8 @@ namespace rapid_ring
 				std::unordered_set<ptr> records;
 				records.insert(&root_);
 				auto grap = grap_;
-				while (1 != grap.size())
+				grap.erase(&root_);
+				while (grap.size() > 1)
 				{
 					for (auto it = grap.begin(); it != grap.end();)
 					{
